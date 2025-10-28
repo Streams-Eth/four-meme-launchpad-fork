@@ -25,7 +25,7 @@ export function FeaturesSection({ features }: FeaturesSectionProps) {
             viewport={{ once: true }}
             className="text-4xl font-bold text-white mb-4"
           >
-            Why Choose Four.Meme Launchpad?
+            Why Choose Launch Stream?
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
