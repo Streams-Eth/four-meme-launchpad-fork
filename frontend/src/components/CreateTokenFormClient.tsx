@@ -31,10 +31,35 @@ export function CreateTokenFormClient() {
     return (fee + liq).toFixed(6);
   }, [creationFeeEth, liquidityEth]);
 
-  const { writeContract, data: txHash, isPending } = useWriteContract();
+  const { writeContract, data: txHash, isPending, error: writeError } = useWriteContract();
   const { isLoading: isConfirming, isSuccess: isConfirmed } = useWaitForTransactionReceipt({
     hash: txHash,
   });
+
+  // Handle transaction status changes
+  React.useEffect(() => {
+    if (isConfirmed && txHash) {
+      toast.success('Token created successfully!');
+      // Reset form
+      setName('');
+      setSymbol('');
+      setTotalSupply('');
+    }
+  }, [isConfirmed, txHash]);
+
+  React.useEffect(() => {
+    if (writeError) {
+      toast.error(writeError.message || 'Transaction failed');
+    }
+  }, [writeError]);
+
+  React.useEffect(() => {
+    if (isConfirming) {
+      toast.loading('Confirming transaction...', { id: 'confirming' });
+    } else {
+      toast.dismiss('confirming');
+    }
+  }, [isConfirming]);
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -55,24 +80,14 @@ export function CreateTokenFormClient() {
       const supplyWei = parseUnits(totalSupply, 18);
       const owner = address!;
       const value = creationFee ? (creationFee as bigint) : parseUnits('0.0001', 18);
-      const toastId = toast.loading('Submitting transaction...');
-      writeContract(
-        {
-          abi: ERC20FactoryAbi,
-          address: factoryAddress,
-          functionName: 'createToken',
-          args: [name, symbol, supplyWei, owner],
-          value,
-        },
-        {
-          onSuccess: () => {
-            toast.success('Transaction sent. Waiting for confirmation...', { id: toastId });
-          },
-          onError: (err) => {
-            toast.error(err.message || 'Transaction failed', { id: toastId });
-          },
-        }
-      );
+      
+      writeContract({
+        abi: ERC20FactoryAbi,
+        address: factoryAddress,
+        functionName: 'createToken',
+        args: [name, symbol, supplyWei, owner],
+        value,
+      } as any);
     } catch (err: any) {
       toast.error(err?.message || 'Failed to prepare transaction');
     }
