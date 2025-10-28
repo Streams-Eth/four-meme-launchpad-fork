@@ -54,7 +54,7 @@ export function Footer() {
               </span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
-              The most professional and secure platform for creating meme tokens on BNB Chain. 
+              The most professional and secure platform for creating meme tokens on Ethereum. 
               Built with enterprise-grade security and user-friendly features.
             </p>
             <div className="flex space-x-4">
@@ -152,7 +152,7 @@ export function Footer() {
               © {new Date().getFullYear()} Four.Meme Launchpad. All rights reserved.
             </p>
             <div className="flex items-center space-x-6 mt-4 md:mt-0">
-              <span className="text-gray-400 text-sm">Built on BNB Chain</span>
+              <span className="text-gray-400 text-sm">Built on Ethereum</span>
               <div className="flex items-center space-x-2 text-gray-400 text-sm">
                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                 <span>All systems operational</span>

@@ -1,7 +1,7 @@
 {
   "name": "@four.meme-launchpad/core",
   "version": "1.0.0",
-  "description": "Professional token launchpad platform for BNB Chain",
+  "description": "Professional token launchpad platform for Ethereum",
   "private": true,
   "workspaces": [
     "smartcontract",
@@ -45,7 +45,7 @@
     "meme",
     "token",
     "launchpad",
-    "bnb-chain",
+    "ethereum",
     "pancakeswap",
     "defi",
     "cryptocurrency",

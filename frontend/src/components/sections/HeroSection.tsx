@@ -50,7 +50,7 @@ export function HeroSection({}: HeroSectionProps) {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed"
           >
-            Create and launch professional meme tokens on BNB Chain with our secure, 
+            Create and launch professional meme tokens on Ethereum with our secure, 
             feature-rich platform. One-click token creation with automatic liquidity and PancakeSwap integration.
           </motion.p>
 

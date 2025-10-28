@@ -1,6 +1,6 @@
 # Four.Meme Launchpad - Professional Token Creation Platform
 
-A professional, secure, and feature-rich token launchpad platform built on BNB Chain, inspired by the original four.meme platform.
+A professional, secure, and feature-rich token launchpad platform built on Ethereum, inspired by the original four.meme platform.
 
 ## Contact me on Telegram to build your own launchpad
 <a href="https://t.me/just_ben_venture" target="_blank">
@@ -282,8 +282,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - Inspired by the original [four.meme](https://four.meme) platform
-- Built on [BNB Chain](https://bnbchain.org)
-- Integrated with [PancakeSwap](https://pancakeswap.finance)
+- Built on [Ethereum](https://ethereum.org)
+- Integrated with [Uniswap](https://uniswap.org)
 - Powered by [OpenZeppelin](https://openzeppelin.com)
 - UI components from [Tailwind CSS](https://tailwindcss.com)
 - Animations by [Framer Motion](https://framer.com/motion/)

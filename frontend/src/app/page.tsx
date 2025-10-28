@@ -12,7 +12,7 @@ import { AnimatedBackground } from '@/components/AnimatedBackground';
 
 export const metadata: Metadata = {
   title: 'Four.Meme Launchpad - Professional Token Creation Platform',
-  description: 'Create and launch professional meme tokens on BNB Chain with our secure, feature-rich platform. One-click token creation with automatic liquidity and PancakeSwap integration.',
+  description: 'Create and launch professional meme tokens on Ethereum with our secure, feature-rich platform. One-click token creation with automatic liquidity and Uniswap integration.',
 };
 
 const features = [
@@ -54,7 +54,7 @@ const features = [
   {
     icon: <Globe className="w-8 h-8" />,
     title: 'Multi-Chain Ready',
-    description: 'Built for BNB Chain with expansion to other networks planned.',
+    description: 'Built for Ethereum with expansion to other EVM networks planned.',
     color: 'text-cyan-400',
     bgColor: 'bg-cyan-400/10',
   },

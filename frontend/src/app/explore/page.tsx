@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Explore Tokens - Four.Meme Launchpad',
-  description: 'Discover and explore the latest meme tokens on BNB Chain.',
+  description: 'Discover and explore the latest meme tokens on Ethereum.',
 };
 
 export default function ExplorePage() {

@@ -11,8 +11,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Launstream - Professional Token Creation Platform',
-  description: 'Create and launch professional meme tokens on BNB Chain with our secure, feature-rich platform. One-click token creation with automatic liquidity and PancakeSwap integration.',
-  keywords: ['meme token', 'token creation', 'BNB Chain', 'PancakeSwap', 'DeFi', 'cryptocurrency', 'blockchain'],
+  description: 'Create and launch professional meme tokens on Ethereum with our secure, feature-rich platform. One-click token creation with automatic liquidity and Uniswap integration.',
+  keywords: ['meme token', 'token creation', 'Ethereum', 'Uniswap', 'DeFi', 'cryptocurrency', 'blockchain'],
   authors: [{ name: 'Launstream Team' }],
   creator: 'Launstream',
   publisher: 'Launstream',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Launstream - Professional Token Creation Platform',
-    description: 'Create and launch professional tokens on BNB Chain with our secure, feature-rich platform.',
+    description: 'Create and launch professional tokens on Ethereum with our secure, feature-rich platform.',
     url: 'https://launchstream.xyz',
     siteName: 'Launstream',
     images: [
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Launstream - Professional Token Creation Platform',
-    description: 'Create and launch professional meme tokens on BNB Chain with our secure, feature-rich platform.',
+    description: 'Create and launch professional meme tokens on Ethereum with our secure, feature-rich platform.',
     images: ['/og-image.png'],
     creator: '@launstream',
   },
