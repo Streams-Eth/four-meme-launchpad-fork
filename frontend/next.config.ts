@@ -1,7 +1,9 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
+  output: 'export',
   images: {
+    unoptimized: true, // Required for static export
     domains: [
       'localhost',
       'four-meme-launchpad.com',
@@ -31,14 +33,6 @@ const nextConfig: NextConfig = {
             value: 'origin-when-cross-origin',
           },
         ],
-      },
-    ];
-  },
-  async rewrites() {
-    return [
-      {
-        source: '/api/:path*',
-        destination: `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001'}/api/:path*`,
       },
     ];
   },
