@@ -1,9 +1,23 @@
 import { ethers } from "hardhat";
 
 async function main() {
-  const [deployer] = await ethers.getSigners();
+  const signers = await ethers.getSigners();
+  
+  if (signers.length === 0) {
+    console.error("❌ No signers available. Please configure PRIVATE_KEY in .env file");
+    process.exit(1);
+  }
+  
+  const deployer = signers[0];
   console.log("Deploying contracts with account:", deployer.address);
-  console.log("Account balance:", ethers.formatEther(await ethers.provider.getBalance(deployer.address)));
+  
+  const balance = await ethers.provider.getBalance(deployer.address);
+  console.log("Account balance:", ethers.formatEther(balance), "ETH");
+  
+  if (balance === 0n) {
+    console.error("❌ Deployer account has zero balance. Please fund the account first.");
+    process.exit(1);
+  }
 
   // Deploy LaunchStreamToken
   console.log("\n1. Deploying LaunchStreamToken...");

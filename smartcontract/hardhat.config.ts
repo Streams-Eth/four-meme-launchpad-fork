@@ -21,10 +21,12 @@ const config: HardhatUserConfig = {
   networks: {
     hardhat: {
       chainId: 1337,
-      forking: {
-        url: process.env.BSC_MAINNET_URL || "https://bsc-dataseed.binance.org/",
-        blockNumber: 35000000, // Pin to a specific block for consistency
-      },
+      // Forking disabled for simple local deployment
+      // Uncomment below to fork BSC mainnet
+      // forking: {
+      //   url: process.env.BSC_MAINNET_URL || "https://bsc-dataseed.binance.org/",
+      //   blockNumber: 35000000,
+      // },
     },
     localhost: {
       url: "http://127.0.0.1:8545",
