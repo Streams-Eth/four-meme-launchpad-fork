@@ -61,10 +61,10 @@ const features = [
 ];
 
 const stats = [
-  { label: 'Tokens Created', value: '10,000+', icon: <Rocket className="w-6 h-6" /> },
-  { label: 'Total Volume', value: '$50M+', icon: <TrendingUp className="w-6 h-6" /> },
-  { label: 'Active Users', value: '25,000+', icon: <Users className="w-6 h-6" /> },
-  { label: 'Success Rate', value: '99.9%', icon: <Shield className="w-6 h-6" /> },
+  { label: 'Tokens Created', value: '10,000+', icon: <Rocket className="w-8 h-8 text-blue-400" /> },
+  { label: 'Total Volume', value: '$50M+', icon: <TrendingUp className="w-8 h-8 text-blue-400" /> },
+  { label: 'Active Users', value: '25,000+', icon: <Users className="w-8 h-8 text-blue-400" /> },
+  { label: 'Success Rate', value: '99.9%', icon: <Shield className="w-8 h-8 text-blue-400" /> },
 ];
 
 const steps = [

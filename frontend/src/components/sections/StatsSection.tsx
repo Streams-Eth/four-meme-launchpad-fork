@@ -7,7 +7,7 @@ interface StatsSectionProps {
   stats: Array<{
     label: string;
     value: string;
-    icon: React.ComponentType<{ className?: string }>;
+    icon: React.ReactNode;
   }>;
 }
 
@@ -26,7 +26,7 @@ export function StatsSection({ stats }: StatsSectionProps) {
               className="text-center"
             >
               <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 bg-white/10 rounded-xl">
-                <stat.icon className="w-8 h-8 text-blue-400" />
+                {stat.icon}
               </div>
               <div className="text-3xl font-bold text-white mb-2">{stat.value}</div>
               <div className="text-gray-400">{stat.label}</div>

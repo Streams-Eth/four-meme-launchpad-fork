@@ -10,32 +10,32 @@ import '@/styles/globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Four.Meme Launchpad - Professional Token Creation Platform',
+  title: 'Launstream - Professional Token Creation Platform',
   description: 'Create and launch professional meme tokens on BNB Chain with our secure, feature-rich platform. One-click token creation with automatic liquidity and PancakeSwap integration.',
   keywords: ['meme token', 'token creation', 'BNB Chain', 'PancakeSwap', 'DeFi', 'cryptocurrency', 'blockchain'],
-  authors: [{ name: 'Four.Meme Launchpad Team' }],
-  creator: 'Four.Meme Launchpad',
-  publisher: 'Four.Meme Launchpad',
+  authors: [{ name: 'Launstream Team' }],
+  creator: 'Launstream',
+  publisher: 'Launstream',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://four-meme-launchpad.com'),
+  metadataBase: new URL('https://launchstream.xyz'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Four.Meme Launchpad - Professional Token Creation Platform',
-    description: 'Create and launch professional meme tokens on BNB Chain with our secure, feature-rich platform.',
-    url: 'https://four-meme-launchpad.com',
-    siteName: 'Four.Meme Launchpad',
+    title: 'Launstream - Professional Token Creation Platform',
+    description: 'Create and launch professional tokens on BNB Chain with our secure, feature-rich platform.',
+    url: 'https://launchstream.xyz',
+    siteName: 'Launstream',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Four.Meme Launchpad',
+        alt: 'Launstream',
       },
     ],
     locale: 'en_US',
@@ -43,10 +43,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Four.Meme Launchpad - Professional Token Creation Platform',
+    title: 'Launstream - Professional Token Creation Platform',
     description: 'Create and launch professional meme tokens on BNB Chain with our secure, feature-rich platform.',
     images: ['/og-image.png'],
-    creator: '@fourmemelaunchpad',
+    creator: '@launstream',
   },
   robots: {
     index: true,

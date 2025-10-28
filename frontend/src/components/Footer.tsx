@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Zap, Twitter, Telegram, Github, Mail, ExternalLink } from 'lucide-react';
+import { Zap, Twitter, Send, Github, Mail, ExternalLink } from 'lucide-react';
 
 const footerLinks = {
   product: [
@@ -33,7 +33,7 @@ const footerLinks = {
 
 const socialLinks = [
   { name: 'Twitter', href: 'https://twitter.com/fourmemelaunchpad', icon: Twitter },
-  { name: 'Telegram', href: 'https://t.me/fourmemelaunchpad', icon: Telegram },
+  { name: 'Telegram', href: 'https://t.me/fourmemelaunchpad', icon: Send },
   { name: 'GitHub', href: 'https://github.com/four-meme-launchpad', icon: Github },
   { name: 'Email', href: 'mailto:contact@four-meme-launchpad.com', icon: Mail },
 ];
