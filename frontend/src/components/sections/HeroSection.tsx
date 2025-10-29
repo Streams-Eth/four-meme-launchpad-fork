@@ -39,7 +39,7 @@ export function HeroSection({}: HeroSectionProps) {
             <span className="text-white">Launch Your</span>
             <br />
             <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-              Meme Token
+               Token
             </span>
           </motion.h1>
 
@@ -50,7 +50,7 @@ export function HeroSection({}: HeroSectionProps) {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed"
           >
-            Create and launch professional meme tokens on Ethereum with our secure, 
+            Create and launch crypto tokens on Ethereum with our secure, 
             feature-rich platform. One-click token creation with automatic liquidity and PancakeSwap integration.
           </motion.p>
 

@@ -11,8 +11,8 @@ import { CTASection } from '@/components/sections/CTASection';
 import { AnimatedBackground } from '@/components/AnimatedBackground';
 
 export const metadata: Metadata = {
-  title: 'Four.Meme Launchpad - Professional Token Creation Platform',
-  description: 'Create and launch professional meme tokens on Ethereum with our secure, feature-rich platform. One-click token creation with automatic liquidity and Uniswap integration.',
+  title: 'LaunchStream - Crypto Token Creation Platform',
+  description: 'Create and launch tokens on Ethereum with our secure, feature-rich platform. One-click token creation with automatic liquidity and Uniswap integration.',
 };
 
 const features = [

@@ -1,4 +1,4 @@
-# Four.Meme Launchpad - Changelog
+# LaunchStream - Changelog
 
 All notable changes to this project will be documented in this file.
 
@@ -20,7 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - **Smart Contracts**
-  - ProfessionalMemeToken contract with advanced features
+  - Professional Token contract with advanced features
   - ProfessionalTokenLaunchpad contract
   - PancakeSwap integration
   - Anti-bot protection mechanisms

@@ -50,11 +50,11 @@ export function Footer() {
                 <Zap className="h-5 w-5 text-white" />
               </div>
               <span className="text-xl font-bold text-white">
-                Four.Meme Launchpad
+                Launch Stream
               </span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
-              The most professional and secure platform for creating meme tokens on Ethereum. 
+              The most professional and secure platform for creating tokens on Ethereum. 
               Built with enterprise-grade security and user-friendly features.
             </p>
             <div className="flex space-x-4">
@@ -149,7 +149,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Four.Meme Launchpad. All rights reserved.
+              © {new Date().getFullYear()} LaunchStream. All rights reserved.
             </p>
             <div className="flex items-center space-x-6 mt-4 md:mt-0">
               <span className="text-gray-400 text-sm">Built on Ethereum</span>

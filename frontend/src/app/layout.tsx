@@ -10,12 +10,12 @@ import '@/styles/globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Launstream - Professional Token Creation Platform',
-  description: 'Create and launch professional meme tokens on Ethereum with our secure, feature-rich platform. One-click token creation with automatic liquidity and Uniswap integration.',
-  keywords: ['meme token', 'token creation', 'Ethereum', 'Uniswap', 'DeFi', 'cryptocurrency', 'blockchain'],
-  authors: [{ name: 'Launstream Team' }],
-  creator: 'Launstream',
-  publisher: 'Launstream',
+  title: 'Launchstream - Crypto Token Creation Platform',
+  description: 'Create and launch tokens on Ethereum with our secure, feature-rich platform. One-click token creation with automatic liquidity and Uniswap integration.',
+  keywords: ['token', 'token creation', 'Ethereum', 'Uniswap', 'DeFi', 'cryptocurrency', 'blockchain'],
+  authors: [{ name: 'Streams Ethereum Team' }],
+  creator: 'Launchstream',
+  publisher: 'Launchstream',
   formatDetection: {
     email: false,
     address: false,
@@ -26,16 +26,16 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Launstream - Professional Token Creation Platform',
-    description: 'Create and launch professional tokens on Ethereum with our secure, feature-rich platform.',
+    title: 'Launchstream - Crypto Token Creation Platform',
+    description: 'Create and launch tokens on Ethereum with our secure, feature-rich platform.',
     url: 'https://launchstream.xyz',
-    siteName: 'Launstream',
+    siteName: 'Launchstream',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Launstream',
+        alt: 'Launchstream',
       },
     ],
     locale: 'en_US',
@@ -43,10 +43,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Launstream - Professional Token Creation Platform',
-    description: 'Create and launch professional meme tokens on Ethereum with our secure, feature-rich platform.',
+    title: 'Launchstream - Crypto Token Creation Platform',
+    description: 'Create and launch tokens on Ethereum with our secure, feature-rich platform.',
     images: ['/og-image.png'],
-    creator: '@launstream',
+    creator: '@launchstream',
   },
   robots: {
     index: true,
