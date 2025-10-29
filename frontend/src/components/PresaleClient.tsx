@@ -5,7 +5,7 @@ import { useAccount, useReadContract, useWriteContract, useWaitForTransactionRec
 import { parseEther, formatEther, formatUnits } from 'viem';
 import toast from 'react-hot-toast';
 import { FixedLSTPresaleAbi } from '@/lib/abis';
-import { LST_PRESALE_ADDRESS, LST_TOKEN_ADDRESS } from '@/lib/contracts';
+import { LST_PRESALE_ADDRESS } from '@/lib/contracts';
 
 export function PresaleClient() {
   const { address, isConnected } = useAccount();
@@ -340,13 +340,7 @@ export function PresaleClient() {
                 )}
               </button>
 
-              {/* Token Address */}
-              <div className="text-center text-xs text-gray-500">
-                <p>LST Token: <code className="text-gray-400">{LST_TOKEN_ADDRESS}</code></p>
-                <p className="mt-1">
-                  Add this address to your wallet to see your LST tokens
-                </p>
-              </div>
+              {/* Token Address removed per request: do not display contract addresses in UI */}
             </form>
           )}
         </div>
