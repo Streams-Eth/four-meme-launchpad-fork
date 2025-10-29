@@ -77,7 +77,7 @@ a {
   }
   
   .gradient-bg {
-    @apply bg-gradient-to-r from-blue-500 to-purple-600;
+    @apply bg-gradient-to-r from-blue-600 to-purple-800;
   }
   
   .glass {

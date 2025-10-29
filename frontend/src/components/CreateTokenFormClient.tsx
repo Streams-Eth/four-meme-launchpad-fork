@@ -12,7 +12,7 @@ export function CreateTokenFormClient() {
   const [name, setName] = useState('');
   const [symbol, setSymbol] = useState('');
   const [totalSupply, setTotalSupply] = useState(''); // human units
-  const [liquidityEth, setLiquidityEth] = useState('0.00001');
+  const [liquidityEth, setLiquidityEth] = useState('0.001');
 
   const factoryAddress = ERC20_FACTORY_ADDRESS;
 
@@ -23,7 +23,7 @@ export function CreateTokenFormClient() {
     query: { enabled: !!factoryAddress },
   });
 
-  const creationFeeEth = useMemo(() => (creationFee ? formatEther(creationFee as bigint) : '0.0001'), [creationFee]);
+  const creationFeeEth = useMemo(() => (creationFee ? formatEther(creationFee as bigint) : '0.01'), [creationFee]);
   const totalEth = useMemo(() => {
     const fee = Number(creationFeeEth);
     const liq = Number(liquidityEth || '0');
@@ -79,7 +79,7 @@ export function CreateTokenFormClient() {
     try {
       const supplyWei = parseUnits(totalSupply, 18);
       const owner = address!;
-      const value = creationFee ? (creationFee as bigint) : parseUnits('0.0001', 18);
+  const value = creationFee ? (creationFee as bigint) : parseUnits('0.01', 18);
       
       writeContract({
         abi: ERC20FactoryAbi,
@@ -193,13 +193,13 @@ export function CreateTokenFormClient() {
           <label className="block text-sm font-medium text-gray-300 mb-2">ETH Amount</label>
           <input
             type="number"
-            step="0.00001"
-            placeholder="e.g., 0.00001"
+            step="0.001"
+            placeholder="e.g., 0.001"
             value={liquidityEth}
             onChange={(e) => setLiquidityEth(e.target.value)}
             className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition-colors"
           />
-          <p className="text-sm text-gray-400 mt-2">Minimum 0.00001 ETH required for initial liquidity</p>
+          <p className="text-sm text-gray-400 mt-2">Minimum 0.001 ETH required for initial liquidity</p>
         </div>
       </div>
 
